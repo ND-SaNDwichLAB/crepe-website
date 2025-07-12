@@ -20,7 +20,8 @@ import {
   ArrowRight,
   Heart,
   ExternalLink,
-  Menu
+  Menu,
+  FileText
 } from "lucide-react";
 
 export default function Home() {
@@ -38,7 +39,7 @@ export default function Home() {
       </div>
       <div className="relative z-10">
       {/* Navigation */}
-      <nav className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <nav className="sticky top-0 z-50">
         <div className="w-full px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-2">
@@ -117,7 +118,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md sm:max-w-none">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4" asChild>
               <a href="https://github.com/ND-SaNDwichLAB/crepe" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-5 w-5 sm:h-6 sm:w-6" />
@@ -126,7 +127,7 @@ export default function Home() {
             </Button>
             <Button size="lg" variant="outline" className="text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4" asChild>
               <a href="https://arxiv.org/abs/2406.16173" target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="mr-2 h-5 w-5 sm:h-6 sm:w-6" />
+                <FileText className="mr-2 h-5 w-5 sm:h-6 sm:w-6" />
                 Read Paper
               </a>
             </Button>
@@ -162,7 +163,7 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <p className="text-base sm:text-lg text-muted-foreground mb-4">
-                        <strong>Goal:</strong> Set up ethical mobile data collection studies without any programming skills.
+                        Set up ethical mobile data collection studies without any programming skills.
                       </p>
                       <div className="bg-muted/90 p-4 sm:p-6 rounded-lg text-base sm:text-lg">
                         <div className="text-muted-foreground mb-3">1. Choose which app to study (like Instagram or Uber)</div>
@@ -186,7 +187,7 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <p className="text-base sm:text-lg text-muted-foreground mb-4">
-                        <strong>Goal:</strong> Contribute to research while maintaining full control and transparency over your data.
+                        Contribute to research while maintaining full control and transparency over your data.
                       </p>
                       <div className="bg-muted/90 p-4 sm:p-6 rounded-lg text-base sm:text-lg">
                         <div className="text-muted-foreground mb-3">1. Enter the researcher's code to join their study</div>
@@ -210,7 +211,7 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <p className="text-base sm:text-lg text-muted-foreground mb-4">
-                        <strong>Goal:</strong> Understand how mobile apps and algorithms impact users in the real world.
+                        Understand how mobile apps and algorithms impact users in the real world.
                       </p>
                       <div className="bg-muted/90 p-4 sm:p-6 rounded-lg text-base sm:text-lg">
                         <div className="text-muted-foreground mb-3">• Track what ads people see on social media</div>
@@ -375,7 +376,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border/40 py-8 sm:py-12">
+      <footer className="py-8 sm:py-12">
         <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center mb-6 sm:mb-8">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
@@ -394,7 +395,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <div className="flex-shrink-0">
                 <Image
-                  src="/nsf-logo.png"
+                  src="/nsf.png"
                   alt="NSF Logo"
                   width={60}
                   height={60}

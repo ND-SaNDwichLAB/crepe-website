@@ -16,6 +16,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
+        sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif'],
         serif: ['Instrument Serif', 'serif'],
       },
       colors: {
