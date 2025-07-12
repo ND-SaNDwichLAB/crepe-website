@@ -44,13 +44,13 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center gap-6">
-            <a href="#how-it-works" className="text-base font-medium hover:text-primary">
+            <a href="#how-it-works" className="nav-link text-base font-medium">
               How It Works
             </a>
-            <a href="#features" className="text-base font-medium hover:text-primary">
+            <a href="#features" className="nav-link text-base font-medium">
               Research
             </a>
-            <a href="#community" className="text-base font-medium hover:text-primary">
+            <a href="#community" className="nav-link text-base font-medium">
               Community
             </a>
             <ThemeToggle />
@@ -68,7 +68,7 @@ export default function Home() {
                 src="/crepe-logo.png"
                 alt="Crepe Logo"
                 width={200}
-                height={200}
+                height={170}
                 className="mx-auto"
               />
               <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
@@ -105,7 +105,7 @@ export default function Home() {
       </section>
 
       {/* How It Works Section - Moved here from later in the page */}
-      <section id="how-it-works" className="py-24 bg-muted/30">
+      <section id="how-it-works" className="py-24">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">How It Works</h2>
@@ -277,7 +277,7 @@ export default function Home() {
       </section>
 
       {/* Research Community Section */}
-      <section id="community" className="py-24 bg-muted/30">
+      <section id="community" className="py-24">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">Research Community</h2>
