@@ -1,12 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/crepe',
-  assetPrefix: '/crepe',
-  trailingSlash: true,
-  images: {
-    loader: 'default',
-    path: '/crepe/_next/image/',
-  },
-}
+  /* config options here */
+};
 
 module.exports = nextConfig; 
